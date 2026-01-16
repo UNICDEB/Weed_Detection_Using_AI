@@ -4,12 +4,15 @@ import os
 import numpy as np
 
 # -------------------- CONFIG --------------------
-MODEL_PATH = "runs/segment/saffron_yolo11x_seg_final/weights/best.pt"
-INPUT_FOLDER = "test_images"
+MODEL_PATH = "E:/Project_Work/2025/Saffron_Project/Github_Code/Weed_Detection/Weed_Detection_Using_AI/segment/train/weights/best.pt"
+INPUT_FOLDER = "Dataset/test/images"
 OUTPUT_FOLDER = "results_batch"
 
-CONF_THRESH = 0.4
-IOU_THRESH = 0.5
+# CONF_THRESH = 0.4
+# IOU_THRESH = 0.5
+
+CONF_THRESH = 0.3
+IOU_THRESH = 0.4
 
 # Supported image formats
 IMG_EXT = (".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff")
