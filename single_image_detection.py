@@ -62,7 +62,7 @@ def test_single_image():
                 poly_np = np.array(polygon, dtype=np.int32)
                 cv2.polylines(img, [poly_np], True, (0, 255, 0), 2)
 
-            print("------------------------------------")
+            print("----------------------------------")
 
         # -------- SAVE RESULT IMAGE --------
         save_path = os.path.join(save_dir, "segmentation_result.jpg")
